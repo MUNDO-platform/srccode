@@ -1,0 +1,10 @@
+setup.py
+ckanext/__init__.py
+ckanext/wsstore/__init__.py
+ckanext_wsstore.egg-info/PKG-INFO
+ckanext_wsstore.egg-info/SOURCES.txt
+ckanext_wsstore.egg-info/dependency_links.txt
+ckanext_wsstore.egg-info/entry_points.txt
+ckanext_wsstore.egg-info/namespace_packages.txt
+ckanext_wsstore.egg-info/not-zip-safe
+ckanext_wsstore.egg-info/top_level.txt

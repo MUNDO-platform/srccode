@@ -1,0 +1,11 @@
+setup.py
+ckanext/__init__.py
+ckanext/wfsstore/__init__.py
+ckanext/wfsstore/plugin.py
+ckanext_wfsstore.egg-info/PKG-INFO
+ckanext_wfsstore.egg-info/SOURCES.txt
+ckanext_wfsstore.egg-info/dependency_links.txt
+ckanext_wfsstore.egg-info/entry_points.txt
+ckanext_wfsstore.egg-info/namespace_packages.txt
+ckanext_wfsstore.egg-info/not-zip-safe
+ckanext_wfsstore.egg-info/top_level.txt

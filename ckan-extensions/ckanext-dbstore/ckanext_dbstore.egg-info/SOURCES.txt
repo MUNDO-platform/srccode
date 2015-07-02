@@ -1,0 +1,10 @@
+setup.py
+ckanext/__init__.py
+ckanext/dbstore/__init__.py
+ckanext_dbstore.egg-info/PKG-INFO
+ckanext_dbstore.egg-info/SOURCES.txt
+ckanext_dbstore.egg-info/dependency_links.txt
+ckanext_dbstore.egg-info/entry_points.txt
+ckanext_dbstore.egg-info/namespace_packages.txt
+ckanext_dbstore.egg-info/not-zip-safe
+ckanext_dbstore.egg-info/top_level.txt

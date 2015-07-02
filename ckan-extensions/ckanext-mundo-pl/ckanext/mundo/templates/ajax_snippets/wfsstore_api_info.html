@@ -1,0 +1,77 @@
+{#
+Displays information about accessing a Dbstore via the API.
+
+datastore_root_url - The root API url.
+resource_id - The resource id
+embedded - If true will not include the "modal" classes on the snippet.
+
+Example
+
+    {% snippet 'ajax_snippets/api_info.html', datastore_root_url=datastore_root_url, resource_id=resource_id, embedded=true %}
+
+#}
+
+{% set sql_example_url = datastore_root_url + '/datastore_search_sql?sql=SELECT * from "' + resource_id + '" WHERE title LIKE \'jones\'' %}
+
+<div {% if not embedded %} class="modal"{% endif %} >
+  <div class="modal-header">
+    <h3>
+      {{ _('WFS API') }}
+    </h3>
+  </div>
+  <div {% if not embedded %} class="modal-body"{% endif %}>
+    <p><strong>{{ _('Access WFS data via a web API') }}</strong>.
+    <div class="accordion" id="accordion2">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapse-endpoints">{{ _('Endpoints') }} &raquo;</a>
+        </div>
+        <div id="collapse-endpoints" class="in accordion-body collapse">
+            <div class="accordion-inner">
+                <p>{{ _('The WFS API can be accessed via the following actions of the CKAN action API.') }}</p>
+                <table class="table-condensed table-striped table-bordered">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">{{ _('WFS show resources') }}</th>
+                            <td><code>{{ datastore_root_url }}/wfsstore_show</code></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{{ _('WFS get data') }}</th>
+                            <td><code>{{ datastore_root_url }}/wfsstore_get</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="accordion2" href="#collapse-querying">{{ _('Querying') }} &raquo;</a>
+        </div>
+        <div id="collapse-querying" class="collapse accordion-body in">
+            <div class="accordion-inner">
+                <strong>{{ _('Query example (show resources)') }} </strong>
+                <p>
+                    <code><a href="{{ datastore_root_url }}/wfsstore_show?name={{package_name}}" target="_blank">{{ datastore_root_url }}/wfsstore_show?name={{package_name}}</a></code>
+                </p>                
+                
+                <strong>{{ _('Query example (get data)') }}</strong>
+                <p>
+                    <code><a href="{{ datastore_root_url }}/wfsstore_get?id={{resource_id}}" target="_blank">{{ datastore_root_url }}/wfsstore_get?id={{resource_id}}</a></code>
+                </p>
+                
+                <strong>{{ _('Query example (limit 5 records)') }}</strong>
+                <p>
+                    <code><a href="{{ datastore_root_url }}/wfsstore_get?id={{resource_id}}&limit=5" target="_blank">{{ datastore_root_url }}/wfsstore_get?id={{resource_id}}&limit=5</a></code>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+</div>

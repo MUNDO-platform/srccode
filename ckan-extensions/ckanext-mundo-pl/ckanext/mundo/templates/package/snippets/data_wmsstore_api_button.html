@@ -1,0 +1,11 @@
+{# Data API Help Button
+
+resource: the resource
+datastore_root_url: the root url of the datastore
+
+#}
+
+  {% set loading_text = _('Loading...') %}
+  {% set api_info_url = h.url_for(controller='api', action='snippet', ver=1, snippet_path='wmsstore_api_info.html', datastore_root_url=datastore_root_url, resource_id=resource.id, package_name=package.name ) %}
+  <a class="btn btn-danger" href="{{ api_info_url }}" data-module="api-info" data-module-template="{{ api_info_url }}" data-loading-text="{{ loading_text }}"><i class="icon-globe icon-small"></i> {{ _('WMS API') }}</a>
+
