@@ -104,3 +104,6 @@ insert into config (key,value,description) values ('wfs.params.maxFeatures','100
 insert into config (key,value,description) values ('db.params.pageSize','100','');
 insert into config (key,value,description) values ('http.default.connectTimeout','30000','');
 insert into config (key,value,description) values ('http.default.readTimeout','60000','');
+insert into config (key,value,description) values ('account.psw.limit','999','Limit of psw logins. Used for new account and psw reset.');
+
+insert into account (email,firstname,lastname,password,passwordlimit,type,username) values ('admin','admin','admin','123456',999,'ROLE_SUPERADMIN','admin');
