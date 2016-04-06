@@ -28,11 +28,12 @@ The following plugins (components) for data conversion were implemented within t
 Proper cooperation between CKAN and Function Server is ensured by a number of extensions for CKAN, that support: communication between CKAN and Function Server, configuration of datasets and resources, as well as display a help section as a website (snippets) on the CKAN server side.
 
  
-No	Extension 	Supported data type 
+No	Extension 	Supported data type
 1	mundo	Shared component for all other extensions
 2	wmsstore	Raster maps from WMS resources
 3	wfsstore	Vector maps from WFS resources
-4	wsstore	Web services – queues  
+4	wsstore	Web services – queues
 5	dbstore	Data base – Trams online
 6	19115store	19115 alert system API
+
 
