@@ -13,7 +13,6 @@ znaleźć pod adresem:  https://www.gnu.org/licenses/lgpl-2.1.html
 * Okres realizacji 01.04.2014 – 31.12.2015
 * Projekt współfinansowany przez Narodowe Centrum Badań i Rozwoju w ramach Programu Innowacje Społeczne
 
-
 Elements of MUNDO platform:
 
 • Proxy server – security layer responsible, among others, for traffic distribution (Apache);
@@ -36,3 +35,4 @@ No Extension Supported data type
 4 wsstore Web services – queues 
 5 dbstore Data base – Trams online 
 6 19115store 19115 alert system API
+
