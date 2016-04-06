@@ -15,15 +15,15 @@ znaleźć pod adresem:  https://www.gnu.org/licenses/lgpl-2.1.html
 
 Elements of MUNDO platform:
  
-•         Proxy server – security layer responsible, among others, for traffic distribution (Apache);
-•         CKAN – Data Server based on CKAN, serving as: data catalogue, server and file and table data repository;
-•         Function server – middleware server for API calls to primary data sources based on Web Services, databases etc. This system allows access to dynamic data. It’s also responsible for limiting calls, data buffering, converting calls and data formats, in order to obtain the most consistent API format possible.
+• Proxy server – security layer responsible, among others, for traffic distribution (Apache);
+• CKAN – Data Server based on CKAN, serving as: data catalogue, server and file and table data repository;
+• Function server – middleware server for API calls to primary data sources based on Web Services, databases etc. This system allows access to dynamic data. It’s also responsible for limiting calls, data buffering, converting calls and data formats, in order to obtain the most consistent API format possible.
 The following plugins (components) for data conversion were implemented within the Function server:
-•         WMS module – allows integration with raster maps repository;
-•         WFS module – allows integration with vector maps repository;
-•         WS module – allows integration with web services (e.g. queue system or 19115 alert system API);
-•         DB module – allows integration with databases (public transport schedules and databases);
-•         DB module – real time version (integration with public transport database with trams position online). 
+• WMS module – allows integration with raster maps repository;
+• WFS module – allows integration with vector maps repository;
+• WS module – allows integration with web services (e.g. queue system or 19115 alert system API);
+• DB module – allows integration with databases (public transport schedules and databases);
+• DB module – real time version (integration with public transport database with trams position online). 
  
 Proper cooperation between CKAN and Function Server is ensured by a number of extensions for CKAN, that support: communication between CKAN and Function Server, configuration of datasets and resources, as well as display a help section as a website (snippets) on the CKAN server side.
 
